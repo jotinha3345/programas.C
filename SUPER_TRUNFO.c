@@ -86,13 +86,17 @@ int main() {
 
     // Comparação clara e organizada
     printf("\n======= COMPARAÇÃO DE CARTAS =======\n");
-    printf("População: Carta 1 venceu (%d)\n", populacao1 > populacao2);
-    printf("Área: Carta 1 venceu (%d)\n", area1 > area2);
-    printf("PIB: Carta 1 venceu (%d)\n", PIB1 > PIB2);
-    printf("Pontos Turísticos: Carta 1 venceu (%d)\n", num_pontos1 > num_pontos2);
-    printf("Densidade Populacional (menor vence): Carta 1 venceu (%d)\n", densidade1 < densidade2);
-    printf("PIB per Capita: Carta 1 venceu (%d)\n", capita1 > capita2);
-    printf("Super Poder: Carta 1 venceu (%d)\n", super_poder1 > super_poder2);
+    printf("Comparação de cartas (Atributo: População):\n");
+    printf("carta 1 \n cidade: %s\n População: %u\n", nome1, populacao1);
+    printf("carta 2 \n cidade: %s\n População: %u\n", nome2, populacao2);
+
+    if(populacao1 > populacao2){
+       
+    printf("População: Carta 1 venceu %d\n", populacao1);
+    }
+    else{
+        printf("População: Carta 2 venceu (%d)\n", populacao2); 
+    }
 
     return 0;
 }
